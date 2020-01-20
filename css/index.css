@@ -475,9 +475,6 @@ h6 {
 
 @media (max-width: 800px) {
 
- body  {
-        color: pink;
-	}
 
 	.navbar {
 		display: flex;
@@ -512,19 +509,33 @@ h6 {
 		margin: 4%;
 		padding: 4%;
 	}
-	#linkborder {
+
+	.linkborder {
 		border: solid grey .4px;
-		display: flex;
 		width: 100%;
 		margin-right: 560px;
+	}
+
+	#about {
+		border-bottom: solid grey .4px;
+	}
+	#contact {
+		border-bottom: solid grey .4px;
 	}
 	#bottompart {
 		display: flex;
 		width: 100%;
 		flex-direction: column;
+		justify-self: center;
+		flex-basis: 100%;
 	}
-	#bottompart p{
-		width: 400;
+	.content-section .content-box-bottom {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content-section .content-box-bottom p{
+		width: 150%;
 	}
 	#toppart {
 		display: flex;
@@ -540,9 +551,7 @@ h6 {
 		display: flex;
 		justify-content: center;
 	}
-    body  {
-		color: cyan;
-	   }
+
 	.caption {
 		display: flex;
 		flex-direction: column;
