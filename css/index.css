@@ -153,15 +153,6 @@ h5 {
 
 /* Your code starts here! */
 
-@media only screen and (max-width: 800px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        color: red;
-        width: 800px;
-    }
-}
-
 #serviceslist {
     list-style: square;
     list-style-position: inside;
@@ -175,6 +166,7 @@ h5 {
 .main-header .navbar {
   padding: 10px;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .main-header .navbar ul {
@@ -184,6 +176,11 @@ h5 {
 	font-size: 10%;
 	width: 80%;
 
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-header .navbar ul li {
@@ -216,13 +213,13 @@ h5 {
 	display: flex;
 	justify-content: center;
 	padding: 1%;
-	margin: 2%;
+    margin: 2%;
 }
 #heroarea {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 100%;
+    width: 100%;
 }
 .main-header .caption {
   text-align: center;
@@ -479,33 +476,82 @@ h6 {
 @media (max-width: 800px) {
 
  body  {
-        color: black;
-        padding: 2%;
-    }
+        color: pink;
+	}
 
-    #pic {
-        display: none;
-    }
-    .logo {
-        display: flex;
-        margin-bottom: 4%;
-        justify-content: center;
-    }
-    .navbar {
-        display: flex;
-        justify-content: center;
-        margin-left: 10%;
-        flex-direction: column-reverse;
-    }
+	.navbar {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.navbar ul {
+		text-align: center;
+	}
+	#logo {
+		margin-bottom: 10%;
+		display: flex;
+		margin-right: 15%;
+	}
+	#pic {
+		display: none;
+	}
 }
 
 @media (max-width: 500px) {
+	.navbar ul {
+		display: flex;
+		flex-direction: column;
+	}
 
+	.navbar a {
+		display: flex;
+		justify-content: center;
+		align-content: space-between;
+		margin: 4%;
+		padding: 4%;
+	}
+	#linkborder {
+		border: solid grey .4px;
+		display: flex;
+		width: 100%;
+		margin-right: 560px;
+	}
+	#bottompart {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+	#bottompart p{
+		width: 400;
+	}
+	#toppart {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 3%;
+	}
+
+	h1 {
+		margin: 3%;
+	}
+	#logo {
+		display: flex;
+		justify-content: center;
+	}
     body  {
-        color: black;
-       }
-    .main-header {
-        border: solid yellow;
-        display: flex;
-    }
-   }
+		color: cyan;
+	   }
+	.caption {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding-right: 15%;
+	}
+
+	.copyright {
+		margin: 6%;
+	}
+}
